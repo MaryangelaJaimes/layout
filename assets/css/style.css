@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,10 @@ a {
   color: inherit;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -17,7 +22,7 @@ a {
     "nav main"
     "footer footer";
   grid-template-columns: 13em 1fr;
-  background: #ffffff;
+  background: #f5f5f5;
 }
 
 header {
@@ -34,13 +39,11 @@ header {
 
 .categorias {
   font-size: 19px;
-  font-family: "Open Sans", sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 .list {
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
   list-style: none;
 }
 .list-texto {
@@ -64,8 +67,13 @@ header {
   align-items: center;
   gap: 1rem;
   background: #fff;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
   box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 0.1);
 }
+
 nav {
   grid-area: nav;
 }
@@ -81,7 +89,6 @@ footer {
 
 .header {
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
   padding: 20px;
   background-color: #22333b;
   color: #fff;
@@ -93,15 +100,12 @@ footer {
   object-fit: cover;
 }
 .titulo-card {
-  font-family: "Open Sans", sans-serif;
   font-size: 20px;
 }
 .precio {
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 .button {
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   padding: 20px;
   min-width: 100%;
@@ -109,11 +113,14 @@ footer {
   border: none;
   color: #fff;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+.button:hover {
+  background-color: #005354;
 }
 
 .footer {
   font-size: 20px;
-  font-family: "Open Sans", sans-serif;
   padding: 20px;
   margin-top: 1rem;
   background-color: #22333b;

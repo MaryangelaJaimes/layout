@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.body {
+  background-color: #f0f0f0;
+}
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -23,7 +27,15 @@ header {
   flex-direction: column;
   align-items: center;
 }
+.categorias {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .list {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
   list-style: none;
 }
 .grid-columns {
@@ -36,6 +48,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 nav {
   grid-area: nav;
@@ -53,11 +66,13 @@ footer {
 
 .header {
   font-size: 20px;
+  font-family: "Open Sans", sans-serif;
   padding: 20px;
   background-color: #443f3f;
   color: #fff;
 }
 .button {
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   padding: 20px;
   min-width: 100%;
